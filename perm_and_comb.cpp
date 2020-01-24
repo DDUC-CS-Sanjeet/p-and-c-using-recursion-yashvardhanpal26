@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-int permutation(float n, float r)
+int permutation(int n,int r)
 
 {
     if(r==0)
@@ -25,7 +25,7 @@ int permutation(float n, float r)
 
 
 
-float combination(float n, float r)
+int combination(int n, int r)
 
 {
 
@@ -36,7 +36,7 @@ float combination(float n, float r)
     }
     else
     {
-      return (n/r)*combination(n-1,r-1);
+      return ((n*1.0)/r)*combination(n-1,r-1);
     }
 
 
@@ -50,7 +50,7 @@ int main()
 
 {
     int x=1;
-    float p,c,n,r;
+    int p,c,n,r;
     cout<<"enter value of n and r \n";
     cin>>n>>r;
     try
@@ -84,6 +84,8 @@ int main()
        cout<<"\ninvalid";                
         
     }
+     
       return 0;
+      
 
 }
